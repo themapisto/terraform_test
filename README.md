@@ -2,8 +2,8 @@
 비밀번호는 항상 저희가 사용하는 그것입니다.
 
 ## 배포 방법
-cd terra/1.0/
-terraform plan
+cd terra/1.0/ && terraform plan
+
 terraform apply 
 
 
