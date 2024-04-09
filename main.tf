@@ -31,7 +31,7 @@ data "vsphere_datastore" "datastore" {
 
 
 data "vsphere_network" "network" {
-  name          = "CG-T1-SEG-30-20-10"
+  name          = "VM Network"
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
 
