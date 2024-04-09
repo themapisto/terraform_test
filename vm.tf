@@ -1,9 +1,9 @@
 resource "vsphere_virtual_machine" "vm" {
-  name             = "koo-terraform-vsphere"
+  name             = "koo-ubuntu"
   resource_pool_id = data.vsphere_compute_cluster.cluster.resource_pool_id
   datastore_id     = data.vsphere_datastore.datastore.id
   num_cpus         = 2
-  guest_id         = "centos7_64Guest"
+  guest_id         = "ubuntu64Guest"
   memory           = 2048
   firmware = "efi"
   network_interface {
@@ -21,7 +21,7 @@ resource "vsphere_virtual_machine" "vm" {
         domain    = "vmwarevmc.com"
       }
       network_interface {
-        ipv4_address = "30.20.10.165"
+        ipv4_address = "30.20.10.166"
         ipv4_netmask = 24
       }
       ipv4_gateway = "30.20.10.1"

@@ -31,11 +31,11 @@ data "vsphere_datastore" "datastore" {
 
 
 data "vsphere_network" "network" {
-  name          = "SEG-30-20-10"
+  name          = "CG-T1-SEG-30-20-10"
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
 
 data "vsphere_virtual_machine" "template" {
-  name          = "VMe"
+  name          = "Ubuntu"
   datacenter_id = data.vsphere_datacenter.datacenter.id
 }
